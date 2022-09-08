@@ -1,2 +1,4 @@
 # APIMAutomation
-Testing two APIM Automation Tools
+Testing APIOps Automation
+
+https://github.com/Azure/apiops
