@@ -1,0 +1,15 @@
+{
+  "name": "wth31",
+  "properties": {
+    "path": "",
+    "displayName": "wth31",
+    "apiRevision": "1",
+    "description": "",
+    "isCurrent": true,
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://ahcsadevops-wth31-dev.azurewebsites.net/",
+    "subscriptionRequired": true
+  }
+}
