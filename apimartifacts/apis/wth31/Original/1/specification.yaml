@@ -9,10 +9,11 @@ paths:
   /api:
     get:
       summary: Get Message
+      description: Get Message
       operationId: get
       responses:
         '200':
-          description: 
+          description: ''
 components:
   securitySchemes:
     apiKeyHeader:
