@@ -1,4 +1,9 @@
 apimServiceName: AHCSA-APIMDemo-Prod
+namedValues:
+  - name: Environment
+    displayName: Environment
+    value: Prod
+  
 apis:
   - name: echo-api
     properties:
