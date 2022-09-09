@@ -5,6 +5,6 @@ namedValues:
     value: Prod
   
 apis:
-  - name: Echo-API
+  - name: echo-api
     displayName: "Echo API"
     serviceUrl: "http://echoapi-prod.cloudapp.net/api"
