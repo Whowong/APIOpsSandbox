@@ -6,5 +6,5 @@ namedValues:
   
 apis:
   - name: echo-api
-    properties:
-      serviceUrl: "http://echoapi-prod.cloudapp.net/api"
+    displayName: "Echo API"
+    serviceUrl: "http://echoapi-prod.cloudapp.net/api"
