@@ -2,4 +2,4 @@ apimServiceName: AHCSA-APIMDemo-Prod
 apis:
   - name: echo-api
     properties:
-      serviceURL: "http://echoapi-prod.cloudapp.net/api"
+      serviceUrl: "http://echoapi-prod.cloudapp.net/api"
