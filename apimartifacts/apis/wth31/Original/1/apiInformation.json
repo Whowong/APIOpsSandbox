@@ -9,7 +9,7 @@
     "protocols": [
       "https"
     ],
-    "serviceUrl": "https://ahcsadevops-wth31-dev.azurewebsites.net/",
+    "serviceUrl": "https://ahcsadevops-wth31-qa.azurewebsites.net/",
     "subscriptionRequired": true
   }
 }
