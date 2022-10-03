@@ -1,15 +1,15 @@
 {
-  "name": "wth31",
+  "name": "echo-demo",
   "properties": {
-    "path": "",
-    "displayName": "wth31",
+    "path": "demo",
+    "displayName": "Echo Demo",
     "apiRevision": "1",
     "description": "",
     "isCurrent": true,
     "protocols": [
       "https"
     ],
-    "serviceUrl": "https://ahcsadevops-wth31-qa.azurewebsites.net/",
+    "serviceUrl": "http://echoapi.cloudapp.net/api",
     "subscriptionRequired": true
   }
 }
