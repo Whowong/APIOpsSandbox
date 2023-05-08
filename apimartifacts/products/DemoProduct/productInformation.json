@@ -1,0 +1,10 @@
+{
+  "name": "demoproduct",
+  "properties": {
+    "displayName": "DemoProduct",
+    "approvalRequired": false,
+    "description": "demo product to test automation",
+    "state": "notPublished",
+    "subscriptionRequired": true
+  }
+}

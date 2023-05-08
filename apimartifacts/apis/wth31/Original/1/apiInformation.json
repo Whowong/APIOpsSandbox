@@ -4,12 +4,17 @@
     "path": "",
     "displayName": "wth31",
     "apiRevision": "1",
+    "authenticationSettings": {},
     "description": "",
     "isCurrent": true,
     "protocols": [
       "https"
     ],
     "serviceUrl": "https://ahcsadevops-wth31-qa.azurewebsites.net/",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
     "subscriptionRequired": true
   }
 }
