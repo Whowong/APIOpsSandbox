@@ -10,6 +10,11 @@
     - Policies are applied in the order of their appearance, from the top down.
     - Comments within policy elements are not supported and may disappear. Place your comments between policy elements or at a higher level scope.
 -->
+
+<!--
+	On inbound we rate limit by ip address for 10 calls per minute
+	On outbound we will set the header called "X-RateLimit-Limit" to the value of the rate limit
+-->
 <policies>
 	<inbound>
 		<base />
@@ -20,6 +25,9 @@
 	</backend>
 	<outbound>
 		<base />
+		<set-header name="X-RateLimit-Limit" exists-action="override">
+			<value>@(context.Variables["rate-limit-by-key-limit"])</value>
+		</set-header>
 	</outbound>
 	<on-error>
 		<base />
