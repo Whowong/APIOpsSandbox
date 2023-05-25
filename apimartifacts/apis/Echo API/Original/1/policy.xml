@@ -13,7 +13,7 @@
 
 <!--
 	On inbound we rate limit by ip address for 10 calls per minute
-	On outbound we will set the header called "X-RateLimit-Limit" to the value of the rate limit
+	On outbound we will delete the header temp if it exists
 -->
 <policies>
 	<inbound>
@@ -25,9 +25,7 @@
 	</backend>
 	<outbound>
 		<base />
-		<set-header name="X-RateLimit-Limit" exists-action="override">
-			<value>@(context.Variables["rate-limit-by-key-limit"])</value>
-		</set-header>
+		<set-header name="temp" exists-action="delete" />
 	</outbound>
 	<on-error>
 		<base />
