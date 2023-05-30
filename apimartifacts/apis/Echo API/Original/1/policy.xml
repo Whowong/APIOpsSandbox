@@ -10,7 +10,6 @@
     - Policies are applied in the order of their appearance, from the top down.
     - Comments within policy elements are not supported and may disappear. Place your comments between policy elements or at a higher level scope.
 -->
-
 <!--
 	On inbound we rate limit by ip address for 10 calls per minute
 	On outbound we will delete the header temp if it exists
@@ -18,14 +17,12 @@
 <policies>
 	<inbound>
 		<base />
-		<rate-limit-by-key calls="10" renewal-period="60" counter-key="@(context.Request.IpAddress)" />
 	</inbound>
 	<backend>
 		<base />
 	</backend>
 	<outbound>
 		<base />
-		<set-header name="temp" exists-action="delete" />
 	</outbound>
 	<on-error>
 		<base />
