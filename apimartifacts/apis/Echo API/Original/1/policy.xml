@@ -11,8 +11,7 @@
     - Comments within policy elements are not supported and may disappear. Place your comments between policy elements or at a higher level scope.
 -->
 <!--
-	On inbound we rate limit by ip address for 10 calls per minute
-	On outbound we will delete the header temp if it exists
+	Outbound policy for setting the temp header value to 1
 -->
 <policies>
 	<inbound>
@@ -24,6 +23,8 @@
 	</backend>
 	<outbound>
 		<base />
+		<set-header name="temp" exists-action="override">
+			<value>1</value>
 	</outbound>
 	<on-error>
 		<base />
