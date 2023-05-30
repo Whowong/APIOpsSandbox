@@ -10,22 +10,16 @@
     - Policies are applied in the order of their appearance, from the top down.
     - Comments within policy elements are not supported and may disappear. Place your comments between policy elements or at a higher level scope.
 -->
-<!--
-	Outbound policy for setting the temp header value to 1
--->
 <policies>
 	<inbound>
 		<base />
-		<rate-limit-by-key calls="10" renewal-period="60" counter-key="@(context.Request.IpAddress)" />
+		<rate-limit-by-key calls="20" renewal-period="60" counter-key="@(context.Request.IpAddress)" />
 	</inbound>
 	<backend>
 		<base />
 	</backend>
 	<outbound>
 		<base />
-		<set-header name="temp" exists-action="override">
-			<value>1</value>
-		</set-header>
 	</outbound>
 	<on-error>
 		<base />
