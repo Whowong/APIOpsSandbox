@@ -25,6 +25,7 @@
 		<base />
 		<set-header name="temp" exists-action="override">
 			<value>1</value>
+		</set-header>
 	</outbound>
 	<on-error>
 		<base />
